@@ -86,7 +86,29 @@ public class MainFrame extends javax.swing.JFrame {
     }
     
     private void dbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    	dbFrame.setVisible(true);
+    	System.out.println("db act");
+    	dbBtn.setVisible(false);
+    	javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+    	 layout.setHorizontalGroup(
+    	            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+    	            .addGroup(layout.createSequentialGroup()
+    	                .addContainerGap()
+    	                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+    	                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 328, Short.MAX_VALUE)
+    	                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+    	                        .addGap(0, 0, Short.MAX_VALUE)
+    	                        .addComponent(closeBtn)))
+    	                .addContainerGap()));
+         layout.setVerticalGroup(
+                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                     .addContainerGap()
+                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
+                     .addGap(18, 18, 18)
+                     .addComponent(closeBtn)
+                     .addGap(20, 20, 20))
+             );
+    	 getContentPane().setLayout(layout);
     }
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
