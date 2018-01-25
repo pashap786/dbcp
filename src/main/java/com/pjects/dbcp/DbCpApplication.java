@@ -1,12 +1,14 @@
 package com.pjects.dbcp;
 
 import org.springframework.boot.Banner;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.annotation.Bean;
 
 import com.pjects.dbcp.frames.DemoFrame;
+import com.pjects.dbcp.frames.MainFrame;
 
 @SpringBootApplication
 public class DbCpApplication {
@@ -51,6 +53,11 @@ public class DbCpApplication {
     @Bean
     public DemoFrame frame() {
         return new DemoFrame();
+    }
+    
+    @Bean
+    public MainFrame mainFrame() {
+    	return new MainFrame();
     }
 }
 	
